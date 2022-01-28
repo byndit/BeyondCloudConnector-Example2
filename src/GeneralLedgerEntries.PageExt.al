@@ -1,4 +1,4 @@
-pageextension 50002 "LOW General Ledger Entries" extends "General Ledger Entries"
+pageextension 50002 "ABC General Ledger Entries" extends "General Ledger Entries"
 {
     layout
     {

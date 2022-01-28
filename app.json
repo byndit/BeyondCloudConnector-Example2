@@ -1,0 +1,28 @@
+{
+  "id": "b29eb842-5f47-4473-b85b-a1fdf608b007",
+  "name": "ABC Customer",
+  "publisher": "Partner Name",
+  "version": "19.0.0.2",
+  "brief": "An Example to Extend our Beyond CloudConnector.",
+  "description": "Visit https://www.beyond-cloudconnector.de/",
+  "url": "https://beyond365.de",
+  "supportedLocales": ["de-DE", "en-US"],
+  "propagateDependencies": true,
+  "application": "19.0.0.0",
+  "platform": "19.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50100
+    }
+  ],
+  "dependencies": [{
+    "id": "7367e644-7294-4a21-b213-942359a67ed5",
+    "name": "BeyondCloudConnector",
+    "publisher": "BEYONDIT GmbH",
+    "version": "18.0.0.0"
+  }],  
+  "runtime": "8.1",
+  "features":  ["TranslationFile","NoImplicitWith"],
+  "target": "Cloud"
+}

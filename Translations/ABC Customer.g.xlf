@@ -48,15 +48,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension ABC Gen. Journal - Control ABC Doc. Process Nos. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4009057707 - Control 2112463835 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1887905131">
+          <source>Link this unique Document Process No. with Beyond Cloud Connector Files.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ABC General Ledger Entries - Control ABC Doc. Process Nos. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2711880022 - Control 2112463835 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4050300754">
           <source>Link this unique Document Process No. with Beyond Cloud Connector Files.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension ABC Posted Gen. Journal - Control ABC Doc. Process Nos. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 2730535231 - Control 2112463835 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1887905131">
-          <source>Link this unique Document Process No. with Beyond Cloud Connector Files.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension LOW General Ledger Entries - Control ABC Doc. Process Nos. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="TableExtension 1215070996 - Field 73722230 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2825951060">
           <source>Doc. Process Nos.</source>

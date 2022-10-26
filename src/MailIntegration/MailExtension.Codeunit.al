@@ -49,32 +49,42 @@ codeunit 50003 "ABC Mail Extension"
             Attachment.CreateOutStream(OutStr, TextEncoding::UTF8);
             OutStr.Write(Message.GetBody());
             Attachment.CreateInStream(BodyInStream, TextEncoding::UTF8);
-            UploadToBeyondCloudConnector(BodyInStream, 'Mail.html', CloudStorageSalesHeader, SalesHeader);
+            UploadToBeyondCloudConnectorOrDownload(BodyInStream, 'Mail.html', CloudStorageSalesHeader, SalesHeader);
         end;
 
         if Message.Attachments_First() then
             repeat
                 Message.Attachments_GetContent(AttachmentStream);
-                UploadToBeyondCloudConnector(AttachmentStream, Message.Attachments_GetName(), CloudStorageSalesHeader, SalesHeader);
+                UploadToBeyondCloudConnectorOrDownload(AttachmentStream, Message.Attachments_GetName(), CloudStorageSalesHeader, SalesHeader);
             until Message.Attachments_Next() = 0;
     end;
 
-    local procedure UploadToBeyondCloudConnector(var AttachmentInStream: InStream; Filename: Text; CloudStorageSalesHeader: Record "BYD Cloud Storage"; SalesHeader: Record "Sales Header")
+    local procedure UploadToBeyondCloudConnectorOrDownload(var AttachmentInStream: InStream; Filename: Text; CloudStorageSalesHeader: Record "BYD Cloud Storage"; SalesHeader: Record "Sales Header")
     var
         CloudStorageMgt: Codeunit "BYD Cloud Storage Mgt.";
         FileManagement: Codeunit "File Management";
         TypeHelper: Codeunit "Type Helper";
         NewFileName: Text;
         TodayFormatted: Text;
+        OK: Boolean;
     begin
         TodayFormatted := TypeHelper.GetFormattedCurrentDateTimeInUserTimeZone(DateTimeFormatLbl);
         NewFileName := StrSubstNo(FileNameLbl, FileManagement.GetFileNameWithoutExtension(FileName), TodayFormatted, FileManagement.GetExtension(FileName));
-
-        Clear(CloudStorageMgt);
-        CloudStorageMgt.PerformChunkedFileUpload(AttachmentInStream, CloudStorageSalesHeader, SalesHeader.RecordId(), SalesHeader.TableCaption(), CloudStorageMgt.GetPrimaryKeyText(SalesHeader.RecordId()), NewFileName, FileManagement.GetFileNameMimeType(NewFileName));
+        Selected := Dialog.StrMenu(DownloadQst, 1, StrSubstNo('Upload or Download your E-Mail Attachment %1?', NewFileName));
+        case selected of
+            1:
+                OK := DownloadFromStream(AttachmentInStream, 'Download', '', '', NewFileName);
+            2:
+                begin
+                    Clear(CloudStorageMgt);
+                    CloudStorageMgt.PerformChunkedFileUpload(AttachmentInStream, CloudStorageSalesHeader, SalesHeader.RecordId(), SalesHeader.TableCaption(), CloudStorageMgt.GetPrimaryKeyText(SalesHeader.RecordId()), NewFileName, FileManagement.GetFileNameMimeType(NewFileName));
+                end;
+        end;
     end;
 
     var
+        Selected: Integer;
         DateTimeFormatLbl: Label 'dd-MM-yyyy-HH-mm-ss', Locked = true;
         FileNameLbl: Label '%1 %2.%3', Locked = true;
+        DownloadQst: Label 'Download,Upload to Beyond Cloud Connector';
 }

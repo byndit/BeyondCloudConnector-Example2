@@ -28,6 +28,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table ABC General Setup - Field Primary Key - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1791901452 - NamedType 440819318" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Download,Upload to Beyond Cloud Connector</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ABC Mail Extension - NamedType DownloadQst</note>
+        </trans-unit>
         <trans-unit id="Page 3552123947 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>General Setup</source>
           <note from="Developer" annotates="general" priority="2"></note>

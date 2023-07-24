@@ -2,14 +2,14 @@
   "id": "b29eb842-5f47-4473-b85b-a1fdf608b007",
   "name": "ABC Customer",
   "publisher": "Partner Name",
-  "version": "19.0.0.3",
+  "version": "19.0.0.4",
   "brief": "An Example to Extend our Beyond CloudConnector.",
   "description": "Visit https://www.beyond-cloudconnector.de/",
-  "url": "https://beyond365.de",
+  "url": "https://www.beyondit.gmbh",
   "supportedLocales": ["de-DE", "en-US"],
   "propagateDependencies": true,
-  "application": "19.0.0.0",
-  "platform": "19.0.0.0",
+  "application": "18.0.0.0",
+  "platform": "18.0.0.0",
   "idRanges": [
     {
       "from": 50000,

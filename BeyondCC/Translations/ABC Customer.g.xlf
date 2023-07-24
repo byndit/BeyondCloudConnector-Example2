@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="ABC Customer">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 73722230 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Process No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ABC Doc. Process No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 73722230 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ABC Doc. Process No. - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3552123947 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ABC General Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3552123947 - Field 2993650459 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Doc. Process Nos.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ABC General Setup - Field Doc. Process Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3552123947 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ABC General Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1791901452 - NamedType 440819318" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Download,Upload to Beyond Cloud Connector</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ABC Mail Extension - NamedType DownloadQst</note>
+        </trans-unit>
+        <trans-unit id="Page 3552123947 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ABC General Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3552123947 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ABC General Setup - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3552123947 - Control 2993650459 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Document Process Nos. field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ABC General Setup - Control Doc. Process Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 680554311 - Action 2732906943 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 219593816">
+          <source>Download All Attachments from System</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ABC Doc. Attachment Details - Action ABC DownloadABCAttachment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1304127077 - Control 2112463835 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Link this unique Document Process No. with Beyond Cloud Connector Files.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ABC Gen. Journal - Control ABC Doc. Process Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4009057707 - Control 2112463835 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1887905131">
+          <source>Link this unique Document Process No. with Beyond Cloud Connector Files.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ABC General Ledger Entries - Control ABC Doc. Process Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2711880022 - Control 2112463835 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4050300754">
+          <source>Link this unique Document Process No. with Beyond Cloud Connector Files.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ABC Posted Gen. Journal - Control ABC Doc. Process Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1215070996 - Field 73722230 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2825951060">
+          <source>Doc. Process Nos.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ABC G/L Entry - Field ABC Doc. Process No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1718618711 - Field 73722230 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1806786327">
+          <source>Doc. Process No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ABC Gen. Journal Line - Field ABC Doc. Process No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1341610736 - Field 73722230 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 445935536">
+          <source>Doc. Process Nos.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ABC Posted Gen. Journal Line - Field ABC Doc. Process No. - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

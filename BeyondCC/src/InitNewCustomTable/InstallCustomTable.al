@@ -27,7 +27,7 @@ codeunit 50004 "ABC Install Custom Table"
     var
         CloudStorage: Record "BYD Cloud Storage";
     begin
-        if not CloudStorage.Get(Id) then begin
+        if not CloudStorage.Get(CloudStorage.Type::Dropzone, Id) then begin
             CloudStorage.Init();
             CloudStorage.Type := CloudStorage.Type::Dropzone;
             CloudStorage."Table ID" := Id;

@@ -1,28 +1,42 @@
 {
-  "id": "b29eb842-5f47-4473-b85b-a1fdf608b007",
-  "name": "ABC Customer",
-  "publisher": "Partner Name",
-  "version": "19.0.0.4",
+  "id": "f199a044-9d38-4e7a-a698-66265132cce7",
+  "name": "Payment Proposal CloudConnector",
+  "publisher": "BEYONDIT GmbH",
+  "version": "1.0.0.1",
   "brief": "An Example to Extend our Beyond CloudConnector.",
   "description": "Visit https://www.beyond-cloudconnector.de/",
   "url": "https://www.beyondit.gmbh",
-  "supportedLocales": ["de-DE", "en-US"],
+  "supportedLocales": [
+    "de-DE",
+    "en-US"
+  ],
   "propagateDependencies": true,
   "application": "18.0.0.0",
   "platform": "18.0.0.0",
   "idRanges": [
     {
-      "from": 50000,
-      "to": 50100
+      "from": 50100,
+      "to": 50105
     }
   ],
-  "dependencies": [{
-    "id": "7367e644-7294-4a21-b213-942359a67ed5",
-    "name": "BeyondCloudConnector",
-    "publisher": "BEYONDIT GmbH",
-    "version": "18.0.0.0"
-  }],  
   "runtime": "8.1",
-  "features":  ["TranslationFile","NoImplicitWith"],
+  "features": [
+    "TranslationFile",
+    "NoImplicitWith"
+  ],
+  "dependencies": [
+    {
+      "id": "7367e644-7294-4a21-b213-942359a67ed5",
+      "name": "BeyondCloudConnector",
+      "publisher": "BEYONDIT GmbH",
+      "version": "18.0.0.0"
+    },
+    {
+      "id": "88cf5d4c-8afc-4a98-9cb7-212196c51d74",
+      "name": "Continia OPplus",
+      "publisher": "Continia Software",
+      "version": "23.0.0.0"
+    }    
+  ],  
   "target": "Cloud"
 }
